@@ -1,3 +1,11 @@
+import './Footer.css';
+
 export function Footer() {
-  return <div>Esto es el FOOOOOter mi amigo</div>;
+  return (
+    <footer className='footer'>
+      <a href='' className='link footer__link'>
+        Antoni Perez
+      </a>
+    </footer>
+  );
 }
