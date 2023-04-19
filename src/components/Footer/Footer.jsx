@@ -1,3 +1,14 @@
+import { GitHub, LinkedIn } from '@mui/icons-material';
+import './Footer.css';
+
 export function Footer() {
-  return <div>Esto es el FOOOOOter mi amigo</div>;
+  return (
+    <footer className='footer'>
+      <div className=''>
+        <a href='#header' className='link footer__link'>
+          Antoni Pérez
+        </a>
+      </div>
+    </footer>
+  );
 }

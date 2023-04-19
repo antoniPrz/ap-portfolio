@@ -1,3 +1,45 @@
+import { ProjectContainer } from '../ProjectContainer/ProjectContainer';
+import './MyProjects.css';
+
+const projects = [
+  // projects can be added an removed
+  // if there are no projects, Projects section won't show up
+  {
+    name: 'Project 1',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Project 2',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Project 3',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+];
+
 export function MyProjects() {
-  return <div>Esto son mis proyectos mi amigo</div>;
+  return (
+    <section id='projects' className='section projects'>
+      <h2 className='section__title'>Proyectos</h2>
+
+      <div className='projects__grid'>
+        {projects.map((project) => (
+          <ProjectContainer project={project} />
+        ))}
+      </div>
+    </section>
+  );
 }
