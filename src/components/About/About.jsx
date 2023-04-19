@@ -1,3 +1,4 @@
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import './About.css';
 
 export function About() {
@@ -23,11 +24,11 @@ export function About() {
         </a>
 
         <a href='' aria-label='github' className='link link--icon'>
-          {/* <GitHubIcon /> */} Github
+          <GitHub />
         </a>
 
         <a href='' aria-label='linkedin' className='link link--icon'>
-          {/* <LinkedInIcon /> */} linkedin
+          <LinkedIn />
         </a>
       </div>
     </div>

@@ -10,14 +10,20 @@ export function Navbar() {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        <li className='nav__list-item' href=''>
-          <a className='link link--nav'>Projects</a>
+        <li className='nav__list-item'>
+          <a className='link link--nav' href='#projects'>
+            Projects
+          </a>
         </li>
         <li className='nav__list-item'>
-          <a className='link link--nav'>Skills</a>
+          <a className='link link--nav' href='#skills'>
+            Skills
+          </a>
         </li>
         <li className='nav__list-item'>
-          <a className='link link--nav'>Contact</a>
+          <a className='link link--nav' href='#contact'>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

@@ -1,3 +1,4 @@
+import { GitHub, Launch } from '@mui/icons-material';
 import './ProjectContainer.css';
 
 export function ProjectContainer({ project }) {
@@ -19,7 +20,7 @@ export function ProjectContainer({ project }) {
         aria-label='source code'
         className='link link--icon'
       >
-        {/* <GitHubIcon /> */}
+        <GitHub />
       </a>
 
       <a
@@ -28,6 +29,7 @@ export function ProjectContainer({ project }) {
         className='link link--icon'
       >
         {/* <LaunchIcon /> */}
+        <Launch />
       </a>
     </div>
   );
