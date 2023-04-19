@@ -16,7 +16,7 @@
 
 
 
-.App {
+.app {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color:#bdbddd;
@@ -77,7 +77,7 @@ main {
 
 .link--nav {
   color: var(--clr-fg);
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   font-weight: 500;
 }
 

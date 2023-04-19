@@ -2,12 +2,15 @@ import { GitHub, LinkedIn } from '@mui/icons-material';
 import './About.css';
 
 export function About() {
+  const resume = 'https://flowcv.com/resume/jpnsdp9mem';
+  const github = 'https://github.com/antoniPrz';
+  const linked = 'https://www.linkedin.com/in/antoni-p%C3%A9rez/';
   return (
-    <div className='about center'>
+    <div className='about center' id='about'>
       <h1>
-        Hi, I am <span className='about__name'> Antoni Perez.</span>
+        ¡Hola!, Soy <span className='about__name'> Antoni Pérez.</span>
       </h1>
-      <h2 className='about__role'>A Full Stack Web Developer.</h2>
+      <h2 className='about__role'>Un Desarrollador Web Full Stack.</h2>
       <p className='about__desc'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
         aliquam error voluptas eius ipsum provident, officiis mollitia autem
@@ -17,17 +20,17 @@ export function About() {
         repellendus nisi magni.
       </p>
       <div className='about__contact center'>
-        <a href=''>
+        <a href={resume}>
           <span type='button' className='btn btn--outline'>
-            Resume
+            Curriculum
           </span>
         </a>
 
-        <a href='' aria-label='github' className='link link--icon'>
+        <a href={github} aria-label='github' className='link link--icon'>
           <GitHub />
         </a>
 
-        <a href='' aria-label='linkedin' className='link link--icon'>
+        <a href={linked} aria-label='linkedin' className='link link--icon'>
           <LinkedIn />
         </a>
       </div>

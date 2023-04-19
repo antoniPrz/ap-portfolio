@@ -7,9 +7,9 @@ import { Contact } from './components/Contact/Contact';
 import { MyProjects } from './components/MyProjects/MyProjects';
 import './App.css';
 
-function App() {
+export function App() {
   return (
-    <div className='App'>
+    <div className='app'>
       <Header />
       <main>
         <About />
@@ -17,9 +17,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <Footer />;
+      <Footer />
     </div>
   );
 }
-
-export default App;
